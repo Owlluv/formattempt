@@ -1,0 +1,118 @@
+ html {
+  font-size: 16px;
+  /*Set all text on page default to 16px*/
+  font-family: Tahoma;
+}
+
+* {
+  box-sizing: border-box;
+  /*makes all elements on a page able to use the boder elements*/
+}
+
+/*pesudo element made fto hold image background*/
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(115deg, rgba(126, 91, 99, 0.8), rgba(106, 77, 84, 0.8)), url("https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  /*specifies that the image goes UNDER other body content*/
+}
+
+
+body {
+  font-family: Tahoma;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+
+.header {
+  text-align: center;
+  /*Sets h1 and p to center align*/
+  margin-bottom: 0;
+  height: 5rem;
+  padding: 3px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+/*container that holds the form*/
+.container {
+  width: 75%;
+  /*makes width of container 75% of the display*/
+  padding: 0;
+  margin: 2em auto;
+}
+
+form {
+  margin-top: 1rem;
+  /*sets top and bottom margins to 0 and centers the right and left*/
+  border-radius: 0.25rem;
+  /*roudns the corners of the form container*/
+  background-color: blue;
+  padding: 2em;
+}
+
+label {
+  display: flex;
+  /*makes all labels be on top of their input*/
+  margin-bottom: .5rem;
+  align-items: center;
+
+}
+
+.form-group {
+  margin: 0 auto 1rem auto;
+}
+
+/*controls the white entry space of inputs*/
+.form-control {
+  width: 100%;
+  height: 2rem;
+  padding: .375rem .275rem;
+  font-size: inheret;
+  font-family: Tahoma;
+  color: grey;
+  border-radius: 0.25rem;
+  border: 1px solid white;
+}
+
+.input-radio,
+.input-checkbox {
+  min-height: 1rem;
+  min-width: 1rem;
+  margin-right: .5rem;
+}
+
+.input-textarea {
+  width: 100%;
+  min-height: 100px;
+  font-family: Tahoma;
+  font-size: inheret;
+  padding: .375rem .375rem;
+  border-radius: .25rem;
+  border: 1px solid white;
+}
+
+.submit-button {
+  width: 100%;
+  padding: .5rem;
+  border-radius: .25rem;
+  border: none;
+  font-family: Tahoma;
+}
