@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Attempt 2 at Form</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!--HEADER-->
+      <header class="header">
+        <h1 id="title">TITLE</h1>
+        <p id="description">Description</p>
+      </header>
+
+      <!--FORM START-->
+      <form id="survey-form">
+
+        <!--Name field-->
+        <div class="form-group">
+          <label id="name-label" for="name">NAME</label>
+          <input type="text" id="name" class="form-control" placeholder="Enter Your Name" required>
+        </div>
+
+        <!--Email field-->
+        <div class="form-group">
+          <label id="email-label" for="email">EMAIL</label>
+          <input type="email" id="email" class="form-control" placeholder="Enter Your Email" required>
+        </div>
+
+        <!--Age field-->
+        <div class="form-group">
+          <label id="agelabel" for="age">AGE</label>
+          <input type="number" id="age" max="120" min="13" class="form-control" placeholder="Age">
+        </div>
+
+        <!--Dropdown Feild-->
+        <div class="form-group">
+          <p>DROPDOWN</p>
+          <select id="dropdown" class="form-control">
+            <option value="">Select an Option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+          </select>
+        </div>
+
+        <!--Radio field-->
+        <div class="form-group">
+          <p>RADIO</p>
+          <label id="option3-label" for="option3">
+            <input type="radio" id="option3" name="radio" class="input-radio" value="option3">
+            Option 3
+          </label>
+          <label id="option4-label" for="option4">
+            <input type="radio" id="option4" name="radio" class="input-radio" value="option4">
+            Option 4
+          </label>
+          <label id="option5-label" for="option5">
+            <input type="radio" id="option5" name="radio" class="input-radio" value="option5">
+            Option 5
+          </label>
+        </div>
+
+        <!--Checkbox field-->
+        <div class="form-group">
+          <p>CHECKBOXES</p>
+          <label id="check1-label" for="check1">
+            <input type="checkbox" id="check1" name="checkbox" class="input-checkbox" value="check1">
+            Checkbox 1
+          </label>
+          <label id="check2-label" for="check2">
+            <input type="checkbox" id="check2" name="checkbox" class="input-checkbox" value="check2">
+            Checkbox 2
+          </label>
+          <label id="check3-label" for="check3">
+            <input type="checkbox" id="check3" name="checkbox" class="input-checkbox" value="check3">
+            Checkbox 3
+          </label>
+        </div>
+
+        <!--Textarea field-->
+        <div class="form-group">
+          <p>TEXTAREA</p>
+          <textarea id="comments" name="comment" class="input-textarea" placeholder="Enter Comment Here..."></textarea>
+        </div>
+
+        <!--Submit button-->
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </body>
+
+</html>
